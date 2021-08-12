@@ -36,3 +36,24 @@ export const getUserApi = (userId) => {
 			return response.data
 		})
 }
+
+export const getUserAlbumsApi = (userId) => {
+	return instance.get(`users/${userId}/albums`)
+		.then(response => {
+			return response.data
+		})
+}
+
+export const getUserTodosApi = (userId) => {
+	return instance.get(`users/${userId}/todos`)
+		.then(response => {
+			return response.data
+		})
+}
+
+export const getUserPostsApi = (userId) => {
+	return instance.get(`users/${userId}/posts`)
+		.then(response => {
+			return response.data
+		})
+}

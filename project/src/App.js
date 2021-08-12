@@ -4,11 +4,11 @@ import './App.scss';
 import React from 'react'
 import {Route} from 'react-router-dom'
 // components
-import PostsListContainer from './common/components/PostsList/PostsListContainer'
-import TodoListContainer from './common/components/TodoList/TodoListContainer'
-import UsersListContainer from './common/components/UsersList/UsersListContainer'
-import Navigation from './common/components/Navigation/Navigation'
-import UserContainer from './common/components/UsersList/UserContainer'
+import PostsListContainer from './modules/PostsList/PostsListContainer'
+import TodoListContainer from './modules/TodoList/TodoListContainer'
+import UsersListContainer from './modules/UsersList/UsersListContainer'
+import Navigation from './modules/Navigation/Navigation'
+import UserContainer from './modules/User/UserContainer'
 
 function App() {
   return (
