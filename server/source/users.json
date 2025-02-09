@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "name": "Bob Johnson",
+      "email": "bob1@gmail.com",
+      "phone": "+380941152633",
+      "website": "https://somesite.com",
+      "address": {
+        "street": "Main St, 12",
+        "city": "Kyiv",
+        "suite": "Apt. 45"
+      },
+      "company": {
+        "name": "Tech Solutions Ltd.",
+        "catchPhrase": "Innovating the future",
+        "bs": "technology consulting"
+      },
+      "posts": [1, 4, 5, 8, 17],
+      "todos": [2, 5]
+    },
+    {
+      "id": 2,
+      "name": "Alice Smith",
+      "email": "alice.smith@example.com",
+      "phone": "+380503339988",
+      "website": "https://aliceworld.net",
+      "address": {
+        "street": "Baker St, 221B",
+        "city": "Lviv",
+        "suite": "Suite 5"
+      },
+      "company": {
+        "name": "Smart Innovations",
+        "catchPhrase": "Empowering smart decisions",
+        "bs": "AI-driven solutions"
+      },
+      "posts": [2, 6, 9, 14, 17, 20],
+      "todos": [1, 6, 8]
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "phone": "+380671112233",
+      "website": "https://michaelspace.io",
+      "address": {
+        "street": "Central Ave, 34",
+        "city": "Odesa",
+        "suite": "Office 12"
+      },
+      "company": {
+        "name": "Brown Enterprises",
+        "catchPhrase": "Leading with excellence",
+        "bs": "business consulting"
+      },
+      "posts": [3, 11, 12, 19],
+      "todos": [3, 7]
+    },
+    {
+      "id": 4,
+      "name": "Sophia Davis",
+      "email": "sophia.davis@example.com",
+      "phone": "+380932225566",
+      "website": "https://sophiadesign.com",
+      "address": {
+        "street": "Greenwood St, 5",
+        "city": "Dnipro",
+        "suite": "Floor 2, Room 8"
+      },
+      "company": {
+        "name": "Davis Design Studio",
+        "catchPhrase": "Creating timeless elegance",
+        "bs": "graphic design services"
+      },
+      "posts": [7, 15],
+      "todos": [10]
+    },
+    {
+      "id": 5,
+      "name": "Daniel Miller",
+      "email": "daniel.miller@example.com",
+      "phone": "+380995556677",
+      "website": "https://millercorp.ua",
+      "address": {
+        "street": "Liberty Ave, 89",
+        "city": "Kharkiv",
+        "suite": "Block C, Unit 3"
+      },
+      "company": {
+        "name": "Miller Corp",
+        "catchPhrase": "Engineering the impossible",
+        "bs": "mechanical engineering"
+      },
+      "posts": [10, 13, 16],
+      "todos": [4, 9, 11]
+    }
+]
+  

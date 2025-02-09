@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "title": "Boosting Productivity with Smart Habits",
+      "body": "Learn how small daily habits can significantly improve your efficiency.",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Top Web Development Trends in 2025",
+      "body": "Explore the latest technologies shaping the future of web development.",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "title": "The Role of AI in Everyday Life",
+      "body": "Artificial intelligence is transforming the way we work and interact.",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "title": "Secrets to Building a Successful Business",
+      "body": "Key principles that help businesses grow and achieve long-term success.",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "title": "How to Stay Motivated Every Day",
+      "body": "Practical tips to maintain motivation even during challenging times.",
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "title": "Programming for Beginners: Where to Start",
+      "body": "A guide for beginners on how to start learning coding effectively.",
+      "userId": 2
+    },
+    {
+      "id": 7,
+      "title": "Cybersecurity Basics: Protect Your Data",
+      "body": "Essential security measures to keep your online information safe.",
+      "userId": 4
+    },
+    {
+      "id": 8,
+      "title": "The Power of Minimalism in Life",
+      "body": "How adopting a minimalist lifestyle can bring more clarity and focus.",
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "title": "Time Management Strategies That Work",
+      "body": "Proven techniques to improve time management and productivity.",
+      "userId": 2
+    },
+    {
+      "id": 10,
+      "title": "The Future of Remote Work",
+      "body": "How remote work is evolving and what to expect in the coming years.",
+      "userId": 5
+    },
+    {
+      "id": 11,
+      "title": "Effective Communication Skills",
+      "body": "Ways to improve your communication for better personal and work relationships.",
+      "userId": 3
+    },
+    {
+      "id": 12,
+      "title": "The Science Behind a Good Night’s Sleep",
+      "body": "Why sleep is important and how to improve sleep quality.",
+      "userId": 3
+    },
+    {
+      "id": 13,
+      "title": "Mastering Public Speaking",
+      "body": "Techniques to become a confident and effective public speaker.",
+      "userId": 5
+    },
+    {
+      "id": 14,
+      "title": "The Rise of Electric Vehicles",
+      "body": "Why electric cars are becoming the future of transportation.",
+      "userId": 2
+    },
+    {
+      "id": 15,
+      "title": "How to Develop a Growth Mindset",
+      "body": "Ways to shift your mindset towards continuous learning and improvement.",
+      "userId": 4
+    },
+    {
+      "id": 16,
+      "title": "Introduction to Blockchain Technology",
+      "body": "A beginner-friendly explanation of how blockchain works and its benefits.",
+      "userId": 5
+    },
+    {
+      "id": 17,
+      "title": "Healthy Eating Habits for a Better Life",
+      "body": "Simple dietary changes that can have a big impact on your health.",
+      "userId": 2
+    },
+    {
+      "id": 18,
+      "title": "Why Learning a New Language is Beneficial",
+      "body": "The cognitive and social benefits of becoming multilingual.",
+      "userId": 1
+    },
+    {
+      "id": 19,
+      "title": "The Importance of Financial Literacy",
+      "body": "Understanding money management and financial independence.",
+      "userId": 3
+    },
+    {
+      "id": 20,
+      "title": "How to Build a Strong Personal Brand",
+      "body": "Steps to establish and grow your brand in the digital world.",
+      "userId": 2
+    }
+  ]
+  
