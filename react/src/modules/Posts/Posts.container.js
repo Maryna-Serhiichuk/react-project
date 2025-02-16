@@ -1,8 +1,8 @@
 // style
 import './../../App.scss'
 // add
-import React, {useEffect} from 'react'
-import {connect} from 'react-redux'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 // components
 import Posts from './Posts'
 import AddPostsForm from './components/AddPostsForm/AddPostsForm'
@@ -12,10 +12,21 @@ import {
 	//thunks
 	getPosts,
 	addPost,
+	startPostListening,
+	stopPostListening,
 } from './actions/postsActions'
 
 const PostsListApiContainer = (props) => {
+	const dispatch = useDispatch()
+	const posts = useSelector((state) => state.postsReducer.posts);
 
+	useEffect(() => {
+		dispatch(startPostListening())
+		return () => {
+			dispatch(stopPostListening())
+		}
+	}, [])
+	
 	useEffect( () => {
 		props.getPosts();
 	}, [] );
@@ -28,23 +39,27 @@ const PostsListApiContainer = (props) => {
 					<AddPostsForm addPost={props.addPost}/>
 				</div>
 				<div className='posts'>
-					{props.posts.map( post => <Posts key={post.id} title={post.title} body={post.body} userName={post.userId}/>)}
+					{posts.map( post => <Posts key={post.id} title={post.title} body={post.body} userName={post.userId}/>)}
 				</div>
 			</div>
 		</div>
 	)
 }
 
-let mapStateToProps = (state) => {
-	return {
-		posts: state.postsReducer.posts,
-	}
-}
+const PostsListContainer = () => {
+	const dispatch = useDispatch();
+  
+	const handleSetPosts = (data) => dispatch(setPosts(data));
+	const handleGetPosts = () => dispatch(getPosts());
+	const handleAddPost = (post) => dispatch(addPost(post));
 
-const PostsListContainer = connect(mapStateToProps, {
-	setPosts,
-	getPosts,
-	addPost,
-})(PostsListApiContainer);
+	return (
+	  <PostsListApiContainer
+		setPosts={handleSetPosts}
+		getPosts={handleGetPosts}
+		addPost={handleAddPost}
+	  />
+	);
+  };
 
 export default PostsListContainer

@@ -14,7 +14,6 @@ const UsersApiContainer = (props) => {
 
 	useEffect( () => {
 		props.getUsers()
-		console.log(props)
 	}, [] )
 	
 	return(

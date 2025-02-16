@@ -1,13 +1,15 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const uuid = require('uuid').v4
+
+const { wss, OPEN } = require('./ws')
 
 const jsonBodyMiddleware = express.json()
 app.use(jsonBodyMiddleware)
 app.use(cors({ origin: '*' }))
 
 const bodyParser = require('body-parser');
-
 const urlencodedParser = bodyParser.urlencoded({extended:true});
 
 const users = require('./source/users.json');
@@ -19,14 +21,28 @@ app.use((req, res, next) => {
     next();
 });
 
+const lastId = (array) => {
+    return array.length + 1
+}
+
 app.route('/posts')
     .get(( req, res ) => {
         res.json(posts)
     })
     .post(urlencodedParser, ( req, res ) => {
         const props = req.body
-        console.log(props)
-        res.json({ result: true })
+        const id = lastId(posts)
+        const newPost = { ...props, id }
+
+        posts.push(newPost)
+
+        wss.clients.forEach(client => {
+            if (client.readyState === OPEN) {
+                client.send(JSON.stringify({ type: 'NEW_POST', data: newPost }))
+            }
+        })
+
+        res.json(newPost)
     })
     
 app.route('/todos')

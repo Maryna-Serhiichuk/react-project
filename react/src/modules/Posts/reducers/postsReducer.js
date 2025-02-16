@@ -1,5 +1,3 @@
-import {setPosts, savePost} from './../actions/postsActions'
-
 let initialState = {
 	posts: [],
 }

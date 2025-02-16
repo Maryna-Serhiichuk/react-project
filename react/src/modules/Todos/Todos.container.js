@@ -16,8 +16,6 @@ import {
 
 function TodosListApiContainer(props) {
 
-	console.log(props)
-
 	useEffect(() => {
 		props.getTodo();
 	}, [])
